@@ -1,0 +1,394 @@
+/* Start Body, Wildcard And more */
+
+:root {
+    --dPurple: hsl(256, 67%, 59%);
+    --lPurple: hsl(254, 88%, 90%);
+    --dYellow: hsl(39, 100%, 71%);
+    --lYellow: hsl(31, 66%, 93%);
+    --white: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 7%);
+    --minusp1: -0.1rem
+} 
+
+* {
+    font-family: "DM Sans", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100dvw;
+}
+
+/* End Body, Wildcard And more */
+
+/* Start Main Section */
+
+.mainSection {
+    background-color: #eee;
+    padding: 5rem;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(16rem,1fr));
+    justify-content: center;
+    grid-template-rows: 23rem 20rem 20rem;
+    gap: 1rem;
+
+}
+/* Start Shared Div */
+.mainSection div {
+    padding: 1.5rem;
+    border-radius: .8rem   
+} 
+.mainSection div h2 {
+    letter-spacing: var(--minusp1);
+}
+
+/* End Shared Div */
+
+/* Start Specail Column */
+
+.mainSection .special {
+    grid-row: 1 / 4;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 0
+}
+
+.mainSection .special > div {
+    height: 50% !important;
+}
+
+/* start create */
+
+.mainSection .create {
+    background-color: var(--lYellow);    
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mainSection .create h2 {
+    color: var(--black);
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;        
+    line-height: 3rem;
+}
+.mainSection .create h2 span {
+    color: var(--dPurple);
+    font-style: italic;
+}
+
+.mainSection .create img {
+    display: block;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 10rem;
+}
+/* end create */
+
+/* Start Write */
+
+.mainSection .write {    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--dYellow)
+}
+
+.mainSection .write h2 {
+    color: var(--black);
+    font-size: 3.1rem;
+    /* margin-bottom: 2rem; */
+    font-weight: 500;        
+    line-height: 3.2rem;
+}
+
+.mainSection .write img {
+    width: 108%;
+}
+
+/* End Write */
+
+/* End Special Column */
+
+/* Start Social Media */
+.socialMedia {
+    grid-column: 2 / 4;
+    background-color: var(--dPurple);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.socialMedia h2 {
+    text-align: center;
+    font-weight: 400;
+    font-size: 4.2rem;
+    line-height: 4rem;
+    margin-bottom: 1rem;
+    color: var(--white)
+}
+.socialMedia h2 span {
+    color: var(--dYellow);
+}
+
+.socialMedia img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: .3rem;
+    width: 10rem;
+    display: block;
+}
+
+.socialMedia h4 { 
+    color: var(--white);
+    font-weight: 400;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content
+}
+
+/* End Social Media */
+
+/* Start Schedule */
+.mainSection .schedule {
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    background-color: var(--lPurple);
+    overflow: hidden;
+}
+
+.mainSection .schedule h2 { 
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 500;
+    color: var(--black);
+    margin-top: 2rem;
+}
+.mainSection .schedule .img-holder {
+    position: relative;
+    height: 10rem;
+    width: 100%;
+
+}
+.mainSection .schedule img {
+    width: 20.5rem;
+    height: 20rem;
+    display: block;
+    position: absolute;
+    right: -7rem;
+    
+}
+.mainSection .schedule h4 {
+    color: var(--black);
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 13rem;    
+}
+/* End Schedule */
+
+/* Start Manage */
+
+.mainSection .manage {
+    grid-column: 2 / 3;
+    background-color: var(--white);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.mainSection .manage img {
+    width: 150%;
+}
+
+.mainSection .manage h2 {
+    color: var(--black);
+    font-size: 2.8rem;
+    font-weight: 500;        
+    line-height: 2.3rem;
+}
+
+/* End Manage */
+
+/* Start maintain */
+.mainSection .maintain {
+    grid-column: 3 / 4;
+    background-color: var(--dYellow);
+    position: relative;
+    overflow: hidden;
+}
+
+.mainSection .maintain h2 {
+    color: var(--black);
+    font-size: 2.8rem;
+    font-weight: 500;        
+    line-height: 2.5rem;
+}
+
+
+
+.mainSection .maintain  img {
+    position: absolute;
+    bottom: -5rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    
+    width: calc(100% - 3rem)
+
+}
+/* End maintain */
+
+/* Start growth */
+
+.mainSection .growth {
+    grid-column: 2 / 3;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.mainSection .growth h2 {
+    color: var(--black);
+    font-size: 4.8rem;
+    font-weight: 500;        
+}
+
+.mainSection .growth h4{
+    color: var(--black);    
+    font-weight: 500;        
+    line-height: 2.1rem;
+    font-size: 1.2rem;
+}
+
+.mainSection .growth img {
+    width: 15rem;
+    margin-top: auto;
+}
+
+/* End growth */
+
+/* Start Followers */
+
+.mainSection .followers {
+    width: 100%;
+    grid-column: 3 / 5;
+    background-color: var(--dPurple);
+    display: flex;    
+}
+
+.mainSection .followers img {
+    max-width: 100%;
+}
+
+.mainSection .followers h2 { 
+    color: var(--white);
+    align-self: center;
+    font-weight: 400;
+    font-size: 3rem;
+    line-height: .9
+
+}
+
+/* End Followers */
+
+
+/* End Main Section */
+
+/* Media Queries */
+
+@media (width <= 376px) {
+    .mainSection {
+        grid-template-columns: auto;
+        grid-template-rows: initial;
+        padding-right: 0.4rem;
+        padding-left: 0.4rem;
+    }   
+
+    /* .mainSection > div {
+        grid-column: initial;
+        grid-row: initial;
+    } */
+    
+    .mainSection .socialMedia,
+    .mainSection .manage,
+    .mainSection .maintain,
+    .mainSection .schedule,
+    .mainSection .followers,
+    .mainSection .growth,
+    .mainSection .special {
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .mainSection .socialMedia {
+        grid-row: 1 / 2;
+    }
+
+    .mainSection .socialMedia h2 {
+        font-size: 3.8rem;
+    }
+    .mainSection .manage {
+        grid-row: 2 / 3;
+    } 
+
+    .mainSection .manage h2 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    .mainSection .maintain {
+        grid-row: 3 / 4;
+    } 
+
+    .mainSection .maintain h2 {
+        color: var(--black);
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 11rem;
+        line-height: 2.5rem;
+    }
+
+    .mainSection .maintain img {
+        bottom: -3rem;
+    }
+    .mainSection .followers {
+        grid-row: 5 / 6;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mainSection .followers h2 {
+        margin-top: 2rem;
+    }
+
+    
+
+    .mainSection .schedule img {
+        right: -0.5rem;
+    }
+    .mainSection .schedule {
+        text-align: center;
+    }
+
+    .mainSection .special {
+        grid-row: 7 / 8        
+    }  
+
+    .mainSection .special > div {
+        height: auto !important;
+    }
+
+    .mainSection .create {
+        justify-content: flex-start;
+    }
+    
+    .mainSection .write h2 {
+        margin-bottom: 1rem;;
+    }
+
+}
